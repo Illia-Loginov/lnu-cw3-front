@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.auth {
+  border: 2px dashed gray;
+  max-width: 300px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  padding: 10px;
+  gap: 10px;
+}
+
+.input {
+  font: inherit;
+  padding: 5px 10px;
+  outline: none;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+.input:focus,
+.input:hover {
+  border: 2px solid black;
+}
+
+.input--button {
+  color: gray;
+  background-color: lightgray;
+}
+
+.input--button:hover {
+  color: black;
+}
+
+.error {
+  color: crimson;
+  font-style: italic;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.main {
+  border: 2px dashed gray;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.header {
+  border-bottom: 2px dashed gray;
+  padding: 10px;
+  height: 75px;
+}
+
+.header__heading {
+  margin: 0;
+}
+
+.sections {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 75px);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px dashed gray;
+}
+
+.chat-list {
+  flex: 1;
+}
+
+.chat-card {
+  border-bottom: 2px dashed lightgray;
+  padding: 10px;
+}
+
+.chat-card__title {
+  font-weight: normal;
+}
+
+.chat-card--active > .chat-card__title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.chat-card__title,
+.chat-card__last-message,
+.chat-card__last-message-time {
+  margin: 0;
+}
+
+.chat-card__last-message {
+  color: gray;
+  text-align: right;
+  font-style: italic;
+}
+
+.chat-card__last-message-time {
+  font-size: 12px;
+  color: gray;
+  text-align: right;
+}
+
+.new-chat {
+  display: flex;
+  padding: 10px 10px 5px 10px;
+  gap: 10px;
+  border-top: 2px dashed gray;
+}
+
+.logout {
+  margin: 5px 10px 10px 10px;
+}
+
+.selected-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.message {
+  border-bottom: 2px dashed lightgray;
+  padding: 10px;
+}
+
+.message--right {
+  text-align: right;
+}
+
+.message__sender,
+.message__time {
+  margin: 0;
+}
+
+.message__sender,
+.message__time {
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+  font-style: italic;
+}
+
+.message__content {
+  margin: 5px 0;
+}
+
+.send-message {
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  border-top: 2px dashed gray;
+}
+
+.send-message__input {
+  flex: 1;
+}
